@@ -14,7 +14,7 @@
 <form method="post">
     <input type="number" name="calculary1">
     <select name="calculary3">
-        <option value="Addition" name="result1">+</option>
+        <option value="Addition" name="calculary3">+</option>
         <option value="Subtraction" name="result2">-</option>
         <option value="Multiplication" name="result3">*</option>
         <option value="Division" name="result4">/</option>

@@ -15,20 +15,20 @@ public class CalcularyController {
     }
 
     @PostMapping("/calculary")
-    public ModelAndView chuyentien(@RequestParam("calculary1") int value1, @RequestParam("calculary1") int value2, @RequestParam("calculary3") String value3) {
+    public ModelAndView chuyentien(@RequestParam("calculary1") int value1, @RequestParam("calculary2") int value2, @RequestParam("calculary3") String value3) {
         ModelAndView modelAndView = new ModelAndView("/calculary");
         if (value3.equals("Addition")) {                  //Nếu là phép cộng
             int result1 = value1 + value2;
-           modelAndView.addObject("result",result1);
+            modelAndView.addObject("result", result1);
         } else if (value3.equals("Subtraction")) {
             int result2 = value1 - value2;
-            modelAndView.addObject("result",result2);
+            modelAndView.addObject("result", result2);
         } else if (value3.equals("Multiplication")) {
             int result3 = value1 * value2;
-            modelAndView.addObject("result",result3);
+            modelAndView.addObject("result", result3);
         } else if (value3.equals("Division")) {
             int result4 = value1 / value2;
-            modelAndView.addObject("result",result4);
+            modelAndView.addObject("result", result4);
         }
         return modelAndView;
     }
